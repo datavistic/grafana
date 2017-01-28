@@ -1,0 +1,110 @@
+I, [2017-01-28T17:10:56.394791 #19238]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2017-01-28T17:10:57.469029 #19238]  INFO -- default-ubuntu-1404: No usable default provider could be found for your system.
+I, [2017-01-28T17:10:57.469225 #19238]  INFO -- default-ubuntu-1404: 
+I, [2017-01-28T17:10:57.469308 #19238]  INFO -- default-ubuntu-1404: Vagrant relies on interactions with 3rd party systems, known as
+I, [2017-01-28T17:10:57.469373 #19238]  INFO -- default-ubuntu-1404: "providers", to provide Vagrant with resources to run development
+I, [2017-01-28T17:10:57.469415 #19238]  INFO -- default-ubuntu-1404: environments. Examples are VirtualBox, VMware, Hyper-V.
+I, [2017-01-28T17:10:57.469439 #19238]  INFO -- default-ubuntu-1404: 
+I, [2017-01-28T17:10:57.469463 #19238]  INFO -- default-ubuntu-1404: The easiest solution to this message is to install VirtualBox, which
+I, [2017-01-28T17:10:57.469488 #19238]  INFO -- default-ubuntu-1404: is available for free on all major platforms.
+I, [2017-01-28T17:10:57.469533 #19238]  INFO -- default-ubuntu-1404: 
+I, [2017-01-28T17:10:57.469561 #19238]  INFO -- default-ubuntu-1404: If you believe you already have a provider available, make sure it
+I, [2017-01-28T17:10:57.469585 #19238]  INFO -- default-ubuntu-1404: is properly installed and configured. You can see more details about
+I, [2017-01-28T17:10:57.469610 #19238]  INFO -- default-ubuntu-1404: why a particular provider isn't working by forcing usage with
+I, [2017-01-28T17:10:57.469634 #19238]  INFO -- default-ubuntu-1404: `vagrant up --provider=PROVIDER`, which should give you a more specific
+I, [2017-01-28T17:10:57.469658 #19238]  INFO -- default-ubuntu-1404: error message for that particular provider.
+E, [2017-01-28T17:10:57.499731 #19238] ERROR -- default-ubuntu-1404: Create failed on instance <default-ubuntu-1404>.
+E, [2017-01-28T17:10:57.500197 #19238] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2017-01-28T17:10:57.500278 #19238] ERROR -- default-ubuntu-1404: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2017-01-28T17:10:57.500337 #19238] ERROR -- default-ubuntu-1404: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: No usable default provider could be found for your system.
+
+Vagrant relies on interactions with 3rd party systems, known as
+"providers", to provide Vagrant with resources to run development
+environments. Examples are VirtualBox, VMware, Hyper-V.
+
+The easiest solution to this message is to install VirtualBox, which
+is available for free on all major platforms.
+
+If you believe you already have a provider available, make sure it
+is properly installed and configured. You can see more details about
+why a particular provider isn't working by forcing usage with
+`vagrant up --provider=PROVIDER`, which should give you a more specific
+error message for that particular provider.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2017-01-28T17:10:57.500408 #19238] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-01-28T17:10:57.500474 #19238] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-01-28T17:10:57.500581 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-01-28T17:10:57.500673 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-01-28T17:10:57.500763 #19238] ERROR -- default-ubuntu-1404: /home/udden/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.0/lib/kitchen/driver/vagrant.rb:412:in `run_command'
+E, [2017-01-28T17:10:57.500849 #19238] ERROR -- default-ubuntu-1404: /home/udden/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.0/lib/kitchen/driver/vagrant.rb:359:in `run'
+E, [2017-01-28T17:10:57.500935 #19238] ERROR -- default-ubuntu-1404: /home/udden/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.0/lib/kitchen/driver/vagrant.rb:443:in `run_vagrant_up'
+E, [2017-01-28T17:10:57.501070 #19238] ERROR -- default-ubuntu-1404: /home/udden/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.0/lib/kitchen/driver/vagrant.rb:104:in `create'
+E, [2017-01-28T17:10:57.501161 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-01-28T17:10:57.501247 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-01-28T17:10:57.501318 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-01-28T17:10:57.501395 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-01-28T17:10:57.501482 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-01-28T17:10:57.501638 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-01-28T17:10:57.501726 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-01-28T17:10:57.501798 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:488:in `action'
+E, [2017-01-28T17:10:57.501868 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-01-28T17:10:57.501937 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-01-28T17:10:57.502010 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-01-28T17:10:57.502198 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:358:in `each'
+E, [2017-01-28T17:10:57.502247 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-01-28T17:10:57.502292 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:124:in `create'
+E, [2017-01-28T17:10:57.502341 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-01-28T17:10:57.502387 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-01-28T17:10:57.502431 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-01-28T17:10:57.502475 #19238] ERROR -- default-ubuntu-1404: ----End Backtrace-----
+E, [2017-01-28T17:10:57.502548 #19238] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2017-01-28T17:10:57.502598 #19238] ERROR -- default-ubuntu-1404: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2017-01-28T17:10:57.502640 #19238] ERROR -- default-ubuntu-1404: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: No usable default provider could be found for your system.
+
+Vagrant relies on interactions with 3rd party systems, known as
+"providers", to provide Vagrant with resources to run development
+environments. Examples are VirtualBox, VMware, Hyper-V.
+
+The easiest solution to this message is to install VirtualBox, which
+is available for free on all major platforms.
+
+If you believe you already have a provider available, make sure it
+is properly installed and configured. You can see more details about
+why a particular provider isn't working by forcing usage with
+`vagrant up --provider=PROVIDER`, which should give you a more specific
+error message for that particular provider.
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2017-01-28T17:10:57.502700 #19238] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-01-28T17:10:57.502747 #19238] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-01-28T17:10:57.502789 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2017-01-28T17:10:57.502832 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2017-01-28T17:10:57.502875 #19238] ERROR -- default-ubuntu-1404: /home/udden/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.0/lib/kitchen/driver/vagrant.rb:412:in `run_command'
+E, [2017-01-28T17:10:57.502918 #19238] ERROR -- default-ubuntu-1404: /home/udden/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.0/lib/kitchen/driver/vagrant.rb:359:in `run'
+E, [2017-01-28T17:10:57.502961 #19238] ERROR -- default-ubuntu-1404: /home/udden/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.0/lib/kitchen/driver/vagrant.rb:443:in `run_vagrant_up'
+E, [2017-01-28T17:10:57.503004 #19238] ERROR -- default-ubuntu-1404: /home/udden/.chefdk/gem/ruby/2.3.0/gems/kitchen-vagrant-1.0.0/lib/kitchen/driver/vagrant.rb:104:in `create'
+E, [2017-01-28T17:10:57.503047 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:460:in `public_send'
+E, [2017-01-28T17:10:57.503090 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:460:in `block in perform_action'
+E, [2017-01-28T17:10:57.503135 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:524:in `block in synchronize_or_call'
+E, [2017-01-28T17:10:57.503179 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:522:in `synchronize'
+E, [2017-01-28T17:10:57.503221 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:522:in `synchronize_or_call'
+E, [2017-01-28T17:10:57.503264 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-01-28T17:10:57.503308 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-01-28T17:10:57.503350 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:488:in `action'
+E, [2017-01-28T17:10:57.503392 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:460:in `perform_action'
+E, [2017-01-28T17:10:57.503434 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:370:in `create_action'
+E, [2017-01-28T17:10:57.503477 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-01-28T17:10:57.503549 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:358:in `each'
+E, [2017-01-28T17:10:57.503600 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-01-28T17:10:57.503654 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/instance.rb:124:in `create'
+E, [2017-01-28T17:10:57.503702 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-01-28T17:10:57.503746 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-01-28T17:10:57.503789 #19238] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.14.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-01-28T17:10:57.503832 #19238] ERROR -- default-ubuntu-1404: ----End Backtrace-----
